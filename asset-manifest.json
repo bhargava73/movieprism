@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/movieprism/static/css/main.e963d7a9.chunk.css",
+    "main.js": "/movieprism/static/js/main.0b8265ec.chunk.js",
+    "main.js.map": "/movieprism/static/js/main.0b8265ec.chunk.js.map",
+    "runtime-main.js": "/movieprism/static/js/runtime-main.49b68fae.js",
+    "runtime-main.js.map": "/movieprism/static/js/runtime-main.49b68fae.js.map",
+    "static/js/2.9d305898.chunk.js": "/movieprism/static/js/2.9d305898.chunk.js",
+    "static/js/2.9d305898.chunk.js.map": "/movieprism/static/js/2.9d305898.chunk.js.map",
+    "static/js/3.1dff958c.chunk.js": "/movieprism/static/js/3.1dff958c.chunk.js",
+    "static/js/3.1dff958c.chunk.js.map": "/movieprism/static/js/3.1dff958c.chunk.js.map",
+    "index.html": "/movieprism/index.html",
+    "static/css/main.e963d7a9.chunk.css.map": "/movieprism/static/css/main.e963d7a9.chunk.css.map",
+    "static/js/2.9d305898.chunk.js.LICENSE.txt": "/movieprism/static/js/2.9d305898.chunk.js.LICENSE.txt",
+    "static/media/lost.01401b6a.svg": "/movieprism/static/media/lost.01401b6a.svg",
+    "static/media/movieAlt.947644df.png": "/movieprism/static/media/movieAlt.947644df.png",
+    "static/media/movieBackAlt.80f8e818.svg": "/movieprism/static/media/movieBackAlt.80f8e818.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.49b68fae.js",
+    "static/js/2.9d305898.chunk.js",
+    "static/css/main.e963d7a9.chunk.css",
+    "static/js/main.0b8265ec.chunk.js"
+  ]
+}
