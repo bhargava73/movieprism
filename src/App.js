@@ -132,10 +132,10 @@ function App() {
 	return (
 		<Router>
 			<Switch>
-				<Route exact path="/">
+				<Route exact path="/movieprism">
 					<div className={theme}>
 						<nav>
-							<Link to="/" className="logo">
+							<Link to="/movieprism" className="logo">
 								Movieprism
 							</Link>
 							<div className="items">
