@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200;300;400;700;800&display=swap");
+
+.backdrop_img {
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.bg {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100%;
+	background: #000000;
+	opacity: 0.5;
+}
+
+::-webkit-scrollbar {
+	width: 0;
+}
+
+.banner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	min-height: 100vh;
+	padding: 0 100px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.banner .content {
+	max-width: 550px;
+	margin-top: -150px;
+}
+
+.banner .content h2 {
+	font-family: "Stick No Bills", sans-serif;
+	text-transform: uppercase;
+	font-size: 2.5em;
+	letter-spacing: 0.1em;
+	color: #fff;
+	font-weight: 800;
+}
+
+.banner .content h6 {
+	font-family: "Stick No Bills", sans-serif;
+	font-size: 1em;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	color: #fff;
+}
+
+.banner .content p {
+	font-size: 1.2em;
+	font-weight: 300;
+	letter-spacing: 0.02em;
+	line-height: 1.5em;
+	color: #eefeef;
+	margin: 15px 0 15px;
+}
+
+.banner .content ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	max-width: inherit;
+	margin-bottom: 20px;
+}
+
+.banner .content ul li {
+	margin: 5px;
+	padding: 8px;
+	border: none;
+	border-radius: 25px;
+	color: #eeeeee;
+	font-size: 15px;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+	transition: all 0.5s ease-in-out;
+}
+
+.vote-rate {
+	background-color: #1b9ce6;
+	color: #ffffff;
+	padding: 10px;
+	float: right;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 999;
+	border: none;
+	border-radius: 100%;
+}
+
+.play {
+	position: relative;
+	display: inline-flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-decoration: none;
+	letter-spacing: 2px;
+	cursor: pointer;
+	font-size: 1.2em;
+}
+
+.play img {
+	margin-right: 10px;
+	max-width: 50px;
+}
+
+.slide {
+	position: absolute;
+	bottom: 50px;
+	left: calc(50% - 250px / 2);
+	width: 250px;
+	height: 150px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	cursor: pointer;
+	animation: animate 25s linear infinite;
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		background-position: top;
+	}
+	45%,
+	55% {
+		background-position: bottom;
+	}
+}
+
+/* .trailer {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1000;
+	background: rgba(0, 0, 0, 0.95);
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.active {
+	visibility: visible;
+	opacity: 1;
+}
+
+.trailer video {
+	max-width: 900px;
+	outline: none;
+} */
+
+.trailer .close {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	cursor: pointer;
+	filter: invert(1);
+	max-width: 32px;
+}
+
+@media (max-width: 991px) {
+	.banner {
+		padding: 100px 50px;
+	}
+	.banner .content {
+		margin-top: -10px;
+	}
+	.banner .content h2 {
+		font-weight: 400;
+		font-size: 2em;
+		letter-spacing: 0.05em;
+	}
+	.banner .content p {
+		font-size: 1em;
+	}
+	.slide {
+		position: relative;
+		bottom: initial;
+		left: 0;
+		width: 250px;
+		height: 150px;
+		margin: 20px 0;
+	}
+}
+
+.err-container {
+	height: 100%;
+	margin: 10px;
+	margin-top: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	overflow: hidden;
+}
+.err-title {
+	font-size: 24px;
+	animation: slideDown 0.3s linear;
+}
+.err-text {
+	font-size: 1.25rem;
+	margin-top: 0.5rem;
+}
+.err-lost-image {
+	max-width: 300px;
+}
+
+.err-btn {
+	margin-top: 20px;
+	padding: 8px;
+	border: 5px solid rgb(130, 173, 216);
+	background: rgb(130, 173, 216);
+	border-radius: 1rem;
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.25rem;
+	font-weight: 600;
+}
