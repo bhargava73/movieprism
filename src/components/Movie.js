@@ -91,7 +91,7 @@ const Movie = ({ match }) => {
 		color: #fff;
 		top: 0;
 		left: 0;
-		margin-left: 10px;
+		margin-left: 20px;
 	`;
 
 	return (
@@ -109,7 +109,13 @@ const Movie = ({ match }) => {
 							<div className="content">
 								<h2>{movie.title}</h2>
 								<h6>{movie.tagline}</h6>
-								{movie.vote_average === "" ? "" : <div className="vote-rate">{movie.vote_average}</div>}
+								{movie.vote_average === "" ? (
+									""
+								) : (
+									<div className="vote-rate">
+										{movie.vote_average}
+									</div>
+								)}
 								<p>{movie.overview}</p>
 								<ul>
 									{genres.map((genre) => (

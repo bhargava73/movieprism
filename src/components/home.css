@@ -345,12 +345,13 @@ search::-webkit-input-placeholder {
 }
 
 .card .vote {
-	background-color: var(--clr-header-bg);
+	background: #ffd700;
 	color: var(--clr-txt);
-	padding: 10px;
 	float: right;
-	position: absolute;
-	right: 20px;
+	font-weight: bold;
+	padding: 10px;
+	position: fixed;
+	right: 25px;
 	bottom: 20px;
 	z-index: 999;
 	border: none;

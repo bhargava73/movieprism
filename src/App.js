@@ -1,6 +1,7 @@
 import "./components/home.css";
 import movieAlt from "./components/movieAlt.png";
 import React, { useEffect, useState } from "react";
+import styled from "styled-components";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Movie from "./components/Movie";
 import SearchIcon from "@mui/icons-material/Search";
@@ -34,7 +35,7 @@ function App() {
 		setApi(PAGINATION_API);
 	}, []);
 
-	const getMovies = (API) =>
+	const getMovies = (API) => {
 		fetch(API)
 			.then((res) => res.json())
 			.then((data) => {
@@ -59,7 +60,7 @@ function App() {
 					alert("No results found.");
 				}
 			});
-
+	};
 	const handleOnSubmit = (e) => {
 		e.preventDefault();
 		if (searchTerm) {
@@ -168,7 +169,9 @@ function App() {
 										<div className="description">
 											<h1>{movie.title}</h1>
 											<p>{movie.overview}</p>
-											<span className="vote">{movie.vote_average}</span>
+											<div className="vote">
+												{movie.vote_average}
+											</div>
 											{movie.overview === "" ? (
 												""
 											) : (

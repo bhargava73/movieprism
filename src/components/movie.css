@@ -37,7 +37,7 @@
 
 .banner .content {
 	max-width: 550px;
-	margin-top: -150px;
+	margin-top: -10px;
 }
 
 .banner .content h2 {
@@ -87,7 +87,7 @@
 	transition: all 0.5s ease-in-out;
 }
 
-.vote-rate {
+/* .vote-rate {
 	background-color: #1b9ce6;
 	color: #ffffff;
 	padding: 10px;
@@ -98,6 +98,18 @@
 	z-index: 999;
 	border: none;
 	border-radius: 100%;
+} */
+
+.vote-rate {
+	background: #ffd700;
+	color: #000000;
+	position: fixed;
+	padding: 8px;
+	border-radius: 100%;
+	top: 24px;
+	font-size: 20px;
+	font-weight: bold;
+	right: 24px;
 }
 
 .play {
@@ -200,6 +212,9 @@
 		width: 250px;
 		height: 150px;
 		margin: 20px 0;
+	}
+	.vote-rate span {
+		right: 42px;
 	}
 }
 
