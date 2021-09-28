@@ -9,7 +9,7 @@
 	--clr-title-1: #3c8ce7;
 	--clr-span: #ff6666;
 	--clr-btn-bg: #6cc164;
-	--clr-header-bg: #88b8bc;
+	--clr-header-bg: #3db2ff;
 	--clr-danger: #ff6666;
 	--clr-grad: linear-gradient(135deg, #3c8ce7 10%, #00eaff 100%);
 	--clr-transparent: rgba(255, 255, 255, 0.7);
@@ -27,7 +27,7 @@
 	--clr-span: #ffc964;
 	--clr-danger: #ff6666;
 	--clr-btn-bg: #6cc164;
-	--clr-header-bg: #88b8bc;
+	--clr-header-bg: #3db2ff;
 	--clr-danger: #ff6666;
 	transition: all 0.3s ease;
 }
