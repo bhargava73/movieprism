@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/movieprism/static/css/main.1f0ef6a6.chunk.css",
-    "main.js": "/movieprism/static/js/main.3d77946c.chunk.js",
-    "main.js.map": "/movieprism/static/js/main.3d77946c.chunk.js.map",
+    "main.css": "/movieprism/static/css/main.45c03864.chunk.css",
+    "main.js": "/movieprism/static/js/main.b74ac810.chunk.js",
+    "main.js.map": "/movieprism/static/js/main.b74ac810.chunk.js.map",
     "runtime-main.js": "/movieprism/static/js/runtime-main.49b68fae.js",
     "runtime-main.js.map": "/movieprism/static/js/runtime-main.49b68fae.js.map",
     "static/js/2.707c52e5.chunk.js": "/movieprism/static/js/2.707c52e5.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.1dff958c.chunk.js": "/movieprism/static/js/3.1dff958c.chunk.js",
     "static/js/3.1dff958c.chunk.js.map": "/movieprism/static/js/3.1dff958c.chunk.js.map",
     "index.html": "/movieprism/index.html",
-    "static/css/main.1f0ef6a6.chunk.css.map": "/movieprism/static/css/main.1f0ef6a6.chunk.css.map",
+    "static/css/main.45c03864.chunk.css.map": "/movieprism/static/css/main.45c03864.chunk.css.map",
     "static/js/2.707c52e5.chunk.js.LICENSE.txt": "/movieprism/static/js/2.707c52e5.chunk.js.LICENSE.txt",
     "static/media/lost.01401b6a.svg": "/movieprism/static/media/lost.01401b6a.svg",
     "static/media/movieAlt.947644df.png": "/movieprism/static/media/movieAlt.947644df.png",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.49b68fae.js",
     "static/js/2.707c52e5.chunk.js",
-    "static/css/main.1f0ef6a6.chunk.css",
-    "static/js/main.3d77946c.chunk.js"
+    "static/css/main.45c03864.chunk.css",
+    "static/js/main.b74ac810.chunk.js"
   ]
 }
