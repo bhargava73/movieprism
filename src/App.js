@@ -133,7 +133,7 @@ function App() {
 	return (
 		<Router>
 			<Switch>
-				<Route exact path="/movieprism">
+				<Route exact path="/">
 					<div className={theme}>
 						<nav>
 							<Link to="/" className="logo">
