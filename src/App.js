@@ -136,7 +136,7 @@ function App() {
 				<Route exact path="/movieprism">
 					<div className={theme}>
 						<nav>
-							<Link to="/movieprism" className="logo">
+							<Link to="/" className="logo">
 								Movieprism
 							</Link>
 							<div className="items">
@@ -175,7 +175,7 @@ function App() {
 											{movie.overview === "" ? (
 												""
 											) : (
-												<Link to={`/movieprism/${movie.id}`} className="btn">
+												<Link to={`/${movie.id}`} className="btn">
 													Know more
 												</Link>
 											)}
@@ -186,7 +186,7 @@ function App() {
 						{paginationDiv}
 					</div>
 				</Route>
-				<Route exact path="/movieprism/:id" component={Movie} />
+				<Route exact path="/:id" component={Movie} />
 			</Switch>
 		</Router>
 	);

@@ -100,7 +100,7 @@ const Movie = ({ match }) => {
 				<div>
 					<Div>
 						<div className="bg"></div>
-						<Link to="/movieprism" id="backicon">
+						<Link to="/" id="backicon">
 							<Span>
 								<ArrowBackIosNewIcon />
 							</Span>
@@ -148,7 +148,7 @@ const Movie = ({ match }) => {
 					<h2 class="err-title">Oops!!</h2>
 					<p class="err-text">I think you are lost. Don't worry... Let me take you back to the homepage.</p>
 					<img src={lostSvg} alt="Lost" class="err-lost-image" />
-					<Link to="/movieprism" class="err-btn">
+					<Link to="/" class="err-btn">
 						Take me to homepage
 					</Link>
 				</div>
