@@ -23,6 +23,17 @@
 	width: 0;
 }
 
+.poster {
+	height: 350px;
+	width: 250px;
+}
+
+.poster img {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+
 .banner {
 	position: relative;
 	width: 100%;
@@ -32,12 +43,17 @@
 	padding: 0 100px;
 	display: flex;
 	justify-content: flex-start;
-	align-items: center;
+	flex-direction: column;
 }
 
 .banner .content {
-	max-width: 550px;
-	margin-top: -10px;
+	display: flex;
+	margin-top: 50px;
+	align-items: center;
+}
+
+.contents {
+	margin-left: 30px;
 }
 
 .banner .content h2 {
@@ -64,6 +80,7 @@
 	line-height: 1.5em;
 	color: #eefeef;
 	margin: 15px 0 15px;
+	max-width: 586px;
 }
 
 .banner .content ul {
@@ -99,6 +116,31 @@
 	border: none;
 	border-radius: 100%;
 } */
+
+.videos {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+.videos h3 {
+	font-size: 20px;
+	margin: 20px 0 18px 0;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	color: #fff;
+}
+
+.videos ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.videos ul li {
+	margin: 0 15px 15px 0;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+}
 
 .vote-rate {
 	background: #ffd700;
@@ -196,6 +238,16 @@
 	}
 	.banner .content {
 		margin-top: -10px;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	.contents {
+		display: flex;
+		margin: 0;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
 	}
 	.banner .content h2 {
 		font-weight: 400;
@@ -204,14 +256,6 @@
 	}
 	.banner .content p {
 		font-size: 1em;
-	}
-	.slide {
-		position: relative;
-		bottom: initial;
-		left: 0;
-		width: 250px;
-		height: 150px;
-		margin: 20px 0;
 	}
 	.vote-rate span {
 		right: 42px;

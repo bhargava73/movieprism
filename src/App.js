@@ -1,5 +1,5 @@
 import "./components/home.css";
-import movieAlt from "./components/movieAlt.png";
+import movieAlt from "./images/movieAlt.png";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
@@ -9,10 +9,12 @@ import ClearIcon from "@mui/icons-material/Clear";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import useTheme from "./components/useTheme";
+import dotenv from "dotenv";
 
-const FEATURED_API = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=f35d024e5f08ff59223ea908d806fe4f&page=1";
-const PAGINATION_API = "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=f35d024e5f08ff59223ea908d806fe4f&page=";
-const SEARCH_API = "https://api.themoviedb.org/3/search/movie?&api_key=f35d024e5f08ff59223ea908d806fe4f&query=";
+dotenv.config();
+const FEATURED_API = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${process.env.REACT_APP_API_KEY}&page=1`;
+const PAGINATION_API = `https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=${process.env.REACT_APP_API_KEY}&page=`;
+const SEARCH_API = `https://api.themoviedb.org/3/search/movie?&api_key=${process.env.REACT_APP_API_KEY}&query=`;
 const IMG_API = "https://image.tmdb.org/t/p/w1280";
 
 function App() {
@@ -39,22 +41,24 @@ function App() {
 		fetch(API)
 			.then((res) => res.json())
 			.then((data) => {
-				if (data.results.length > 0) {
-					setMovies(data.results);
-					setTotalPages(data.total_pages);
-					setCurrentPage(data.page);
-					setPrevPage(data.page - 1);
-					setNextPage(data.page + 1);
-					scrollToTop();
-					if (data.page <= 1) {
-						setPrevState("disabled");
-					} else {
-						setPrevState("");
-					}
-					if (data.page < data.total_pages) {
-						setNextState("");
-					} else {
-						setNextState("disabled");
+				if (data.results !== undefined) {
+					if (data.results.length > 0) {
+						setMovies(data.results);
+						setTotalPages(data.total_pages);
+						setCurrentPage(data.page);
+						setPrevPage(data.page - 1);
+						setNextPage(data.page + 1);
+						scrollToTop();
+						if (data.page <= 1) {
+							setPrevState("disabled");
+						} else {
+							setPrevState("");
+						}
+						if (data.page < data.total_pages) {
+							setNextState("");
+						} else {
+							setNextState("disabled");
+						}
 					}
 				} else {
 					alert("No results found.");
@@ -169,9 +173,7 @@ function App() {
 										<div className="description">
 											<h1>{movie.title}</h1>
 											<p>{movie.overview}</p>
-											<div className="vote">
-												{movie.vote_average}
-											</div>
+											<div className="vote">{movie.vote_average}</div>
 											{movie.overview === "" ? (
 												""
 											) : (
